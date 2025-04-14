@@ -7,12 +7,17 @@ Bugs Known: none
 /* --- CORE --- */
 body {
 	background-color: black;
-    background-image: radial-gradient(circle, black, #202020, #202020);
+    background-image: radial-gradient(circle, black, #121111, #131313);
     /* */
     color: white;
     font-family: "Montserrat", sans-serif;
     margin: 40px;
 }
+
+p {
+
+}
+
 
 h1 {
 
@@ -22,12 +27,20 @@ h2 {
 
 }
 
-h3 {
-
+nav {
+    text-align: right;
+    font-size: 20px;
+    word-spacing: 20px;
 }
 
-p {
 
+/* -- LAYOUTS -- */
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
 }
 
 /* --- CLASSES ---  */
@@ -35,8 +48,64 @@ p {
 
 }
 
-/* --- ADDITIONAL ---  */
+.topbar {
+    background-color: #131313;
+    border-style: solid;
+    border-color: #3e3e3e;
+    border-width: 2px;
+    border-radius: 10px;
+}
 
+.nameArea {
+    width: 50%;
+    margin-left: 1%;
+}
+
+.firstHName {
+    font-size: 45px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.backHName {
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    text-align: left;
+    font-weight: lighter;
+}
+
+.naviArea {
+    width: 50%;
+    margin-right: 1%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.navi {
+    font-size: 24px;
+}
+
+
+
+
+
+.topbarIsland {
+    margin: 20px;
+}
+
+/* -- DEV PURPOSES -- */
+.ident {
+    background-color: white;
+}
+
+.ident2 {
+    background-color: grey;
+}
+
+/* --- ADDITIONAL ---  */
 
 #clock {
     height: 100px;
