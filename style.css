@@ -6,12 +6,12 @@ Bugs Known: none
 
 /* --- CORE --- */
 body {
-	background-color: black;
-    background-image: radial-gradient(circle, black, #121111, #131313);
+	background-color: white;
+    /*background-image: radial-gradient(circle, black, #121111, #131313);
     /* */
     color: white;
     font-family: "Montserrat", sans-serif;
-    margin: 30px;
+    margin: 0px;
 }
 
 p {
@@ -49,6 +49,15 @@ nav {
 }
 
 .topbar {
+    background-color: grey;
+    margin: 0%;
+    padding: 5px;
+    width: 100vw;
+    position: fixed;
+}
+
+.topbarIsland {
+    margin: 20px;
     background-color: #131313;
     border-style: solid;
     border-color: #3e3e3e;
@@ -58,7 +67,8 @@ nav {
 
 .nameArea {
     width: 50%;
-    margin-left: 25px;
+    margin-left: 50px;
+    margin: 15px;
 }
 
 .firstHName {
@@ -89,13 +99,6 @@ nav {
 }
 
 
-
-
-
-.topbarIsland {
-    margin: 20px;
-}
-
 /* -- DEV PURPOSES -- */
 .ident {
     background-color: white;
@@ -107,15 +110,4 @@ nav {
 
 /* --- ADDITIONAL ---  */
 
-#clock {
-    height: 100px;
-    width: 800px;
-    margin: auto;
-    position: absolute;
-    top: 0; left: 0; bottom: 0; right: 0;
-    padding-top: 70px;
-    font-family: courier, monospace;
-    text-align: center;
-    color: white;
-    font-size: 100px;
-}
+
