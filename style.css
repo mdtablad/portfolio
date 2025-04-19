@@ -6,12 +6,11 @@ Bugs Known: none
 
 /* --- CORE --- */
 body {
-	background-color: white;
-    /*background-image: radial-gradient(circle, black, #121111, #131313);
+	background-color: black;
+    background-image: radial-gradient(circle, black, #121111, #131313);
     /* */
     color: white;
     font-family: "Montserrat", sans-serif;
-    margin: 0px;
 }
 
 p {
@@ -25,12 +24,6 @@ h1 {
 
 h2 {
 
-}
-
-nav {
-    text-align: right;
-    font-size: 20px;
-    word-spacing: 20px;
 }
 
 
@@ -48,27 +41,42 @@ nav {
 
 }
 
+/* -- Topbar -- */
+
 .topbar {
-    background-color: grey;
-    margin: 0%;
+    background-color: black;
+    background-image: linear-gradient(#121111, rgba(0, 0, 0, 0.119));
+    margin: 0;
     padding: 5px;
-    width: 100vw;
+    width: 100%;
     position: fixed;
+    left: 0;
+    top: 0;
 }
 
 .topbarIsland {
     margin: 20px;
+    padding-left: 15px;
+    padding-right: 8px;
     background-color: #131313;
     border-style: solid;
     border-color: #3e3e3e;
     border-width: 2px;
     border-radius: 20px;
+    left: 0;
+    right: 0;
+
+    flex-direction: row;
 }
 
+/* -- Name -- */
+
 .nameArea {
-    width: 50%;
-    margin-left: 50px;
-    margin: 15px;
+    width: 30%;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    text-align: center;
 }
 
 .firstHName {
@@ -76,6 +84,7 @@ nav {
     margin-bottom: 0px;
     margin-top: 3px;
     text-align: left;
+    left: 0;
 }
 
 .backHName {
@@ -84,10 +93,19 @@ nav {
     margin-top: 0px;
     text-align: left;
     font-weight: lighter;
+    left: 0;
+}
+
+
+/* -- Navi -- */
+nav {
+    text-align: right;
+    font-size: 20px;
+    word-spacing: 15px;
 }
 
 .naviArea {
-    width: 50%;
+    width: 70%;
     margin-right: 25px;
     display: flex;
     justify-content: right;
@@ -95,7 +113,25 @@ nav {
 }
 
 .navi {
-    font-size: 22px;
+    font-size: 21px;
+}
+
+.naviList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+}
+
+li {
+    display: inline;
+    padding: 8px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
 }
 
 
@@ -108,6 +144,44 @@ nav {
     background-color: grey;
 }
 
-/* --- ADDITIONAL ---  */
+/* --- MOTION --- */
+li:hover {
+    background-color: #211f1f;
+    border-radius: 10px;
+}
 
+a:hover {
+    color: white;
+    
+}
+
+li:active {
+    background-color: #121111;
+    border-style: solid;
+    border-color: #3e3e3e;
+    border-width: 2px;
+    border-radius: 10px;
+}
+
+/* --- ADDITIONAL ---  */
+@media screen and (max-width: 680px) {
+    .topbarIsland {display: flex;
+    justify-content: center;
+padding-bottom: 20px;
+padding-right: 30px;
+flex-direction: column;}
+
+    .nameArea {width: 100%; justify-content: center; padding-left: 0px;}
+    .firstHName {text-align: center; }
+    .backHName {text-align: center;}
+
+    .naviArea {width: 100%; justify-content: center;}
+    .naviList {text-align: center; border-spacing: 20px; display: flex; flex-direction: column;} 
+  
+    a {padding-left: 0px;}
+}
+
+@media screen and (max-width: 800px) {
+    a {padding: 1px;}
+}
 
