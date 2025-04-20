@@ -5,12 +5,16 @@ Bugs Known: none
 */
 
 /* --- CORE --- */
+
+html {
+    height: 100%;
+}
 body {
-	background-color: black;
-    background-image: radial-gradient(circle, black, #121111, #131313);
+    background-color: rgba(0, 0, 0, 0);
     /* */
     color: white;
     font-family: "Montserrat", sans-serif;
+    height: 100%;
 }
 
 p {
@@ -27,7 +31,7 @@ h2 {
 }
 
 
-/* -- LAYOUTS -- */
+/* --- LAYOUTS --- */
 .flex {
     display: flex;
 }
@@ -37,15 +41,12 @@ h2 {
 }
 
 /* --- CLASSES ---  */
-.main {
-
-}
 
 /* -- Topbar -- */
 
 .topbar {
-    background-color: black;
-    background-image: linear-gradient(#121111, rgba(0, 0, 0, 0.119));
+    background-color: rgba(0, 0, 0, 0);
+    background-image: linear-gradient(#121111, #090909, #040404, rgba(0, 0, 0, 0));
     margin: 0;
     padding: 5px;
     width: 100%;
@@ -69,7 +70,7 @@ h2 {
     flex-direction: row;
 }
 
-/* -- Name -- */
+/* - Name - */
 
 .nameArea {
     width: 30%;
@@ -97,7 +98,7 @@ h2 {
 }
 
 
-/* -- Navi -- */
+/* - Navi - */
 nav {
     text-align: right;
     font-size: 20px;
@@ -134,8 +135,58 @@ a {
     padding: 15px;
 }
 
+/* -- ~~~~~~~~ -- */
 
-/* -- DEV PURPOSES -- */
+/* -- Welcome -- */
+.welcome {
+    margin-top: 0px;
+    background-color:rgba(0,0,0,0);
+    height: 100%;
+}
+
+.main {
+    height: 110%;
+    color: white;
+    font-size: 40px;
+    background-color: white;
+}
+
+
+/* -- ~~~~~~~~ -- */
+
+/* -- BottomBar -- */
+.bottomBar {
+    background-color: rgba(255, 255, 255, 0);
+    background-image: linear-gradient(rgba(0, 0, 0, 0),#000000, #000000, #090909, #121111);
+
+    height: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.bottomBarIsland {
+
+}
+
+.conList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    text-align: right;
+    font-size: 14px;
+    padding: 0;
+}
+
+.cLink {
+    display: inline;
+    padding: 5px;
+}
+
+
+/* --- DEV PURPOSES --- */
 .ident {
     background-color: white;
 }
@@ -145,7 +196,9 @@ a {
 }
 
 /* --- MOTION --- */
-li:hover {
+
+/* -- Topbar -- */
+.tLink:hover {
     background-color: #211f1f;
     border-radius: 10px;
 }
@@ -155,7 +208,7 @@ a:hover {
     
 }
 
-li:active {
+.tLink:active {
     background-color: #121111;
     border-style: solid;
     border-color: #3e3e3e;
@@ -163,7 +216,7 @@ li:active {
     border-radius: 10px;
 }
 
-/* --- ADDITIONAL ---  */
+/* --- COMPATABILITY ---  */
 @media screen and (max-width: 680px) {
     .topbarIsland {display: flex;
     justify-content: center;
@@ -179,10 +232,25 @@ flex-direction: column;}
     .naviList {text-align: center; border-spacing: 20px; display: flex; flex-direction: column;} 
   
     a {padding-left: 0px;}
+    
+    .bottomBar {
+        padding-top: 60px;
+        padding-right: 0px;
+        padding-left: 30px;
+    }
+
+    .bottomBarIsland .nameArea {
+        display: none;
+    }
+
+    .conList {
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 800px) {
     a {padding: 1px;}
 }
 
-/* I did this because i want my CSS to update */
+/* --- ADDITIONALS ---  */
+
