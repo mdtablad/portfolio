@@ -218,25 +218,49 @@ a:hover {
 
 /* --- COMPATABILITY ---  */
 @media screen and (max-width: 680px) {
-    .topbarIsland {display: flex;
-    justify-content: center;
-padding-bottom: 20px;
-padding-right: 30px;
-flex-direction: column;}
+    .topbarIsland {
+        display: flex; 
+        justify-content: center; 
+        padding-bottom: 20px; 
+        padding-left: 20px; 
+        padding-right: 20px; 
+        flex-direction: column;
+    }
 
-    .nameArea {width: 100%; justify-content: center; padding-left: 0px;}
-    .firstHName {text-align: center; }
-    .backHName {text-align: center;}
+    .nameArea {
+        width: 100%; 
+        justify-content: center; 
+        padding-left: 0px;
+    }
+    .firstHName {
+        text-align: center; 
+    }
+    .backHName {
+        text-align: center;
+    }
 
-    .naviArea {width: 100%; justify-content: center;}
-    .naviList {text-align: center; border-spacing: 20px; display: flex; flex-direction: column;} 
+    .naviArea {
+        width: 100%; 
+        justify-content: center;
+    }
+    .naviList {
+        text-align: center; 
+        border-spacing: 20px; 
+        display: flex; 
+        flex-direction: row; 
+        font-size: 17px;
+    } 
+
   
-    a {padding-left: 0px;}
+    a {
+        padding-left: 0px;
+    }
     
     .bottomBar {
         padding-top: 60px;
         padding-right: 0px;
         padding-left: 30px;
+        padding-bottom: 8px;
     }
 
     .bottomBarIsland .nameArea {
@@ -249,7 +273,9 @@ flex-direction: column;}
 }
 
 @media screen and (max-width: 800px) {
-    a {padding: 1px;}
+    a {
+        padding: 1px;
+    }
 }
 
 /* --- ADDITIONALS ---  */
