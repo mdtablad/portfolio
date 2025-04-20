@@ -276,9 +276,9 @@ a:hover {
 }
 
 /* Text Fit for Mobile */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 400px) {
     .naviList {
-        font-size: 15px;
+        font-size: 14px;
     } 
 }
 
