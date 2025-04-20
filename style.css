@@ -15,6 +15,7 @@ body {
     color: white;
     font-family: "Montserrat", sans-serif;
     height: 100%;
+    margin: 0px;
 }
 
 p {
@@ -158,7 +159,6 @@ a {
 .bottomBar {
     background-color: rgba(255, 255, 255, 0);
     background-image: linear-gradient(rgba(0, 0, 0, 0),#000000, #000000, #090909, #121111);
-
     height: 100px;
     padding-left: 20px;
     padding-right: 20px;
@@ -167,7 +167,7 @@ a {
 }
 
 .bottomBarIsland {
-
+    margin: 0;
 }
 
 .conList {
