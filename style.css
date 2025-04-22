@@ -9,8 +9,9 @@ Bugs Known: none
 html {
     height: 100%;
 }
+
 body {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: #121111;
     /* */
     color: white;
     font-family: "Montserrat", sans-serif;
@@ -139,23 +140,56 @@ a {
 /* -- ~~~~~~~~ -- */
 
 /* -- Welcome -- */
-.welcome {
+.contentSection {
     margin-top: 0px;
-    background-color:rgba(0,0,0,0);
+    background-color: rgba(0,0,0,0);
+    top: 0;
     height: 100%;
+    flex-direction: column;
 }
 
-.main {
-    height: 110%;
+/* - Cover - */
+.cover {
+    height: 60%;
+    font-size: 40px;
+    background-color: grey;
+}
+
+.coverArea {
+    height: 100%;
+    width: 100%;
+    background-color: pink;
+    flex-direction: row;
+}
+
+.coverText{
+    color: white;
+    padding-top: 220px;
+    margin-left: 100px;
+}
+
+.coverPortrait {
+    color: white;
+    padding-top: 220px;
+    padding-right: 100px;
+}
+
+/* - About - */
+.about {
+    height: 40%;
     color: white;
     font-size: 40px;
-    background-color: white;
+    background-color: green;
 }
 
 
 /* -- ~~~~~~~~ -- */
 
 /* -- BottomBar -- */
+footer {
+    bottom: 0;
+}
+
 .bottomBar {
     background-color: rgba(255, 255, 255, 0);
     background-image: linear-gradient(rgba(0, 0, 0, 0),#000000, #000000, #090909, #121111);
@@ -164,6 +198,7 @@ a {
     padding-right: 20px;
     padding-top: 25px;
     padding-bottom: 25px;
+    bottom: 0;
 }
 
 .bottomBarIsland {
