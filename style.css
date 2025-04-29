@@ -17,6 +17,7 @@ body {
     font-family: "Montserrat", sans-serif;
     height: 100%;
     margin: 0px;
+    position: relative;
 }
 
 p {
@@ -140,6 +141,14 @@ a {
 /* -- ~~~~~~~~ -- */
 
 /* -- Welcome -- */
+.coverSection {
+    margin-top: 0px;
+    background-color: rgba(0,0,0,0);
+    top: 0;
+    height: 100%;
+    flex-direction: column;
+}
+
 .contentSection {
     margin-top: 0px;
     background-color: rgba(0,0,0,0);
@@ -150,7 +159,7 @@ a {
 
 /* - Cover - */
 .cover {
-    height: 60%;
+    height: 150%;
     font-size: 40px;
     background-color: grey;
 }
@@ -158,25 +167,30 @@ a {
 .coverArea {
     height: 100%;
     width: 100%;
-    background-color: pink;
+    background-color: powderblue;
     flex-direction: row;
 }
 
 .coverText{
     color: white;
-    padding-top: 220px;
-    margin-left: 100px;
+    padding-left: 100px;
+    width: 50%;
+    padding-top: 350px;
+    /* */ 
 }
 
 .coverPortrait {
     color: white;
-    padding-top: 220px;
     padding-right: 100px;
+    width: 50%;
+    padding-top: 350px;
+    /* */ 
+    text-align: right;
 }
 
 /* - About - */
 .about {
-    height: 40%;
+    height: 100%;
     color: white;
     font-size: 40px;
     background-color: green;
