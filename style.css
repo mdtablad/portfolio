@@ -323,7 +323,7 @@ a {
 /* GO */
 .go {
     color: white;
-    font-size: 40px;
+    font-size: 30px;
     background-color: #0000;
     padding-top: 25px;
     padding-bottom: 25px;
@@ -335,20 +335,29 @@ a {
 .goalsObjectives {
     flex-direction: row;
     justify-content: center;
+    padding-top: 10px;
 }
 
-.goalsHeader {
-    background-color: green;
+.goals {
+    background-color: black;
+    width: 50%;
+
 }
 
-.objectivesHeader {
-    background-color: grey;
+.objectives {
+    background-color: black;
+    width: 50%;
 }
 
 .headerTextGO {
     text-align: center;
+    font-size: 40px;
+    font-weight: bold;
 }
 
+.listGO {
+    list-style-type: disc;
+}
 
 /* -- ~~~~~~~~ -- */
 
