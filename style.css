@@ -144,14 +144,14 @@ a {
 /* -- Welcome -- */
 .mainSection {
     flex-direction: column;
-    height: 200%;
+    height: auto;
 }
 
 .coverSection {
     margin-top: 0px;
     background-color: rgba(0,0,0,0);
     top: 0;
-    height: 55%;
+    height: auto;
     flex-direction: column;
 }
 
@@ -159,19 +159,19 @@ a {
     margin-top: 0px;
     background-color: #090909df;
     top: 0;
-    height: 45%;
+    height: auto;
     flex-direction: column;
 }
 
 /* - Cover - */
 .cover {
-    height: 100%;
+    height: auto;
     font-size: 40px;
-    background-color: grey;
+    background-color: #090909df;
 }
 
 .coverArea {
-    height: 100%;
+    height: auto;
     width: 100%;
     background-color: #121111;
     flex-direction: row;
@@ -330,6 +330,8 @@ a {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    height: auto;
+    margin-left: 50px;
 }
 
 .goalsObjectives {
@@ -339,13 +341,11 @@ a {
 }
 
 .goals {
-    background-color: black;
     width: 50%;
 
 }
 
 .objectives {
-    background-color: black;
     width: 50%;
 }
 
@@ -357,6 +357,56 @@ a {
 
 .listGO {
     list-style-type: disc;
+}
+
+.goList {
+    display: list-item;
+    font-size: 24px;
+}
+
+/* R */
+.r {
+    color: white;
+    font-size: 30px;
+    background-color: #131313;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: auto;
+    margin-left: 50px;
+}
+
+.resume {
+    flex-direction: row;
+}
+
+.resumeTitle {
+    flex-direction: column;
+    width: 50%;
+}
+
+.headerTextR {
+    text-align: left;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.subHeaderTextR {
+    text-align: left;
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.resumeDownload {
+    text-align: center;
+    width: 50%;
+}
+
+.rLink {
+    float: center;
+    font-size: 28px;
 }
 
 /* -- ~~~~~~~~ -- */
@@ -414,12 +464,25 @@ footer {
     border-radius: 10px;
 }
 
+.rLink:hover {
+    background-color: #211f1f;
+    border-radius: 10px;
+}
+
 a:hover {
     color: white;
     
 }
 
 .tLink:active {
+    background-color: #121111;
+    border-style: solid;
+    border-color: #3e3e3e;
+    border-width: 2px;
+    border-radius: 10px;
+}
+
+.rLink:active {
     background-color: #121111;
     border-style: solid;
     border-color: #3e3e3e;
