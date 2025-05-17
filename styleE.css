@@ -1,0 +1,389 @@
+/*
+Author: mdtablad
+Created: 4/3/25
+Bugs Known: none
+*/
+
+/* --- CORE --- */
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #121111;
+    /* */
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    height: 100%;
+    margin: 0px;
+    position: relative;
+}
+
+p {
+
+}
+
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+
+/* --- LAYOUTS --- */
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
+
+/* --- CLASSES ---  */
+
+/* -- Topbar -- */
+
+.topbar {
+    background-color: rgba(0, 0, 0, 0);
+    background-image: linear-gradient(#121111, #090909, #040404, rgba(0, 0, 0, 0));
+    margin: 0;
+    padding: 5px;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+
+.topbarIsland {
+    margin: 20px;
+    padding-left: 15px;
+    padding-right: 8px;
+    background-color: #131313;
+    border-style: solid;
+    border-color: #3e3e3e;
+    border-width: 2px;
+    border-radius: 20px;
+    left: 0;
+    right: 0;
+
+    flex-direction: row;
+}
+
+/* - Name - */
+
+.nameArea {
+    width: 30%;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.firstHName {
+    font-size: 35px;
+    margin-bottom: 0px;
+    margin-top: 3px;
+    text-align: left;
+    left: 0;
+}
+
+.backHName {
+    font-size: 18px;
+    margin-bottom: 3px;
+    margin-top: 0px;
+    text-align: left;
+    font-weight: lighter;
+    left: 0;
+}
+
+
+/* - Navi - */
+nav {
+    text-align: right;
+    font-size: 20px;
+    word-spacing: 15px;
+}
+
+.naviArea {
+    width: 70%;
+    margin-right: 25px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.navi {
+    font-size: 21px;
+}
+
+.naviList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+}
+
+li {
+    display: inline;
+    padding: 8px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+}
+
+/* -- ~~~~~~~~ -- */
+
+/* -- Extracurriculars -- */
+.mainSection {
+    flex-direction: column;
+    height: auto;
+}
+
+.coverSection {
+    margin-top: 0px;
+    background-color: rgba(0,0,0,0);
+    top: 0;
+    height: auto;
+    flex-direction: column;
+}
+
+.contentSection {
+    margin-top: 0px;
+    background-color: #090909df;
+    top: 0;
+    height: auto;
+    flex-direction: column;
+}
+
+/* - Cover - */
+.cover {
+    height: auto;
+    font-size: 40px;
+    background-color: #090909df;
+}
+
+.coverText{
+    color: white;
+    width: 100%;
+    padding-top: 200px;
+    padding-bottom: 100px;
+}
+
+#tHalfText {
+    margin-bottom: 0;
+    font-size: 50px;
+    letter-spacing: 7px;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* - Categories - */
+.cate {
+    height: auto;
+    color: white;
+    font-size: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    flex-direction: column;
+}
+
+.cateHeader {
+    text-align: center;
+    width: 100%;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+.cateGrid {
+    padding-top: 20px ;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.cateGridBox {
+    width: 20%;
+    flex-direction: column;
+    text-align: center;
+}
+
+.cateGridTitle {
+    font-size: 18px;
+}
+
+.cateGridSub {
+    font-size: 14px;
+    font-style: italic;
+}
+
+.leadership {
+    background-color: rgba(0,0,0,0);
+}
+
+
+
+/* -- ~~~~~~~~ -- */
+
+/* -- BottomBar -- */
+footer {
+    bottom: 0;
+}
+
+.bottomBar {
+    background-color: rgba(255, 255, 255, 0);
+    background-image: linear-gradient(rgba(0, 0, 0, 0),#000000, #000000, #090909, #121111);
+    height: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    bottom: 0;
+}
+
+.bottomBarIsland {
+    margin: 0;
+}
+
+.conList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    text-align: right;
+    font-size: 14px;
+    padding: 0;
+}
+
+.cLink {
+    display: inline;
+    padding: 5px;
+}
+
+
+/* --- DEV PURPOSES --- */
+.ident {
+    background-color: white;
+}
+
+.ident2 {
+    background-color: grey;
+}
+
+/* --- MOTION --- */
+
+/* -- Topbar -- */
+.tLink:hover {
+    background-color: #211f1f;
+    border-radius: 10px;
+}
+
+.rLink:hover {
+    background-color: #211f1f;
+    border-radius: 10px;
+}
+
+a:hover {
+    color: white;
+    
+}
+
+.tLink:active {
+    background-color: #121111;
+    border-style: solid;
+    border-color: #3e3e3e;
+    border-width: 2px;
+    border-radius: 10px;
+}
+
+.rLink:active {
+    background-color: #121111;
+    border-style: solid;
+    border-color: #3e3e3e;
+    border-width: 2px;
+    border-radius: 10px;
+}
+
+/* --- COMPATABILITY ---  */
+/* Small Screen/Mobile View */
+@media screen and (max-width: 680px) {
+    /* -- Topbar -- */
+    .topbarIsland {
+        display: flex; 
+        justify-content: center; 
+        padding-bottom: 20px; 
+        padding-left: 20px; 
+        padding-right: 20px; 
+        flex-direction: column;
+    }
+
+    .nameArea {
+        width: 100%; 
+        justify-content: center; 
+        padding-left: 0px;
+    }
+    .firstHName {
+        text-align: center; 
+    }
+    .backHName {
+        text-align: center;
+    }
+
+    .naviArea {
+        width: 100%; 
+        justify-content: center;
+    }
+    .naviList {
+        text-align: center; 
+        border-spacing: 20px; 
+        display: flex; 
+        flex-direction: row; 
+        font-size: 18px;
+    } 
+
+    a {
+        padding-left: 0px;
+    }
+
+    /* -- BottomBar -- */
+    
+    .bottomBar {
+        padding-top: 60px;
+        padding-right: 0px;
+        padding-left: 30px;
+        padding-bottom: 8px;
+    }
+
+    .bottomBarIsland .nameArea {
+        display: none;
+    }
+
+    .conList {
+        text-align: center;
+    }
+}
+
+/* Text Fit for Mobile */
+@media screen and (max-width: 450px) {
+    .naviList {
+        font-size: 14px;
+    } 
+}
+
+/* Getting Smaller Width Fit View */
+@media screen and (max-width: 800px) {
+    a {
+        padding: 1px;
+    }
+}
+
+/* --- ADDITIONALS ---  */
